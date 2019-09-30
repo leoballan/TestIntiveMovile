@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.DetailFragment"
+    android:background="@android:color/background_dark"
+    >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/detail_fragment_guideline1"
+        android:background="@color/celeste_claro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/detail_fragment_guideline2"
+        android:background="@color/celeste_claro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detailFragment_cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_detail_land"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@android:color/background_dark"
+        >
+
+        <ImageView
+            android:id="@+id/detailFragment_imageview"
+            android:layout_width="@dimen/width_photo_detail"
+            android:layout_height="@dimen/width_photo_detail"
+            android:layout_gravity="center"
+            android:contentDescription="@null" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/detail_fragment_guideline1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1"
+                />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/detail_fragment_guideline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4"
+        />
+
+            <TextView
+                android:id="@+id/detailFragment_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detailFragment_cardView"
+                android:text="holA"
+                android:textSize="@dimen/font_size_name"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/fondo_detail_name"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:id="@+id/detailFragment_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detailFragment_name"
+                android:text="holA"
+                android:textSize="@dimen/font_size_username"
+                android:textColor="@android:color/holo_blue_bright"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/fondo_detail_username_mail"
+                android:gravity="center"
+
+                />
+
+
+            <TextView
+                android:id="@+id/detailFragment_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detailFragment_user"
+                android:text="holA"
+                android:textSize="@dimen/font_size_username"
+                android:textColor="@android:color/holo_blue_bright"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/fondo_detail_username_mail"
+                android:gravity="center"
+
+                />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

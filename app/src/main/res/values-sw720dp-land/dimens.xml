@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_photo_detail">500dp</dimen>
+    <dimen name="heigth_photo_detail">500dp</dimen>
+    <dimen name="font_size_name">32sp</dimen>
+    <dimen name="font_size_username">26sp</dimen>
+    <dimen name="margin_detail_land">24dp</dimen>
+
+</resources>

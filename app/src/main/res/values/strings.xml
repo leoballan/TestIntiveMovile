@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestMobileIntive</string>
+
+    <string name="dialogo_simple_button_ok">OK</string>
+    <string name="dialogo_simple_button_retry">Retry</string>
+    <string name="dialogo_simple_tittle">W A R N I N G !!</string>
+    <string name="dialogo_simple_message">There was an error, please try again</string>
+    <string name="dialogo_simple_message_backpress">Please choose an option</string>
+
+
+</resources>

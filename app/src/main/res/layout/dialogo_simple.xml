@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_dialogo_simple"
+    android:paddingBottom="16dp">
+
+    <ImageView
+        android:id="@+id/dialogo_simple_imagen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/fondo_dialogo_simple_cabecera"
+        android:contentDescription="@null"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_info_outline_black_24dp" />
+
+    <TextView
+        android:id="@+id/dialogo_simple_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogo_simple_imagen"
+
+        />
+
+    <TextView
+        android:id="@+id/dialogo_simple_mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogo_simple_titulo"
+
+        />
+
+
+    <Button
+        android:id="@+id/dialogo_simple_bt_retry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fondo_dialogo_simple_boton"
+        android:text="@string/dialogo_simple_button_retry"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/dialogo_simple_bt_Ok"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogo_simple_mensaje"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        />
+
+    <Button
+        android:id="@+id/dialogo_simple_bt_Ok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fondo_dialogo_simple_boton"
+        android:text="@string/dialogo_simple_button_ok"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dialogo_simple_bt_retry"
+        app:layout_constraintTop_toBottomOf="@+id/dialogo_simple_mensaje"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

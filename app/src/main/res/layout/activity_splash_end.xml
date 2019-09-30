@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SplashActivity"
+    >
+
+    <ImageView
+        android:id="@+id/splash_activity_intive_celeste"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/splash_activity_intive_verde"
+        app:layout_constraintBottom_toTopOf="@+id/splash_activity_intive_amarillo"
+        android:contentDescription="@null"
+        android:src="@drawable/celeste"
+        android:scaleType="centerCrop"
+
+        />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/splash_activity_intive_amarillo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@+id/splash_activity_intive_lila"
+        app:layout_constraintTop_toBottomOf="@+id/splash_activity_intive_celeste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/splash_activity_intive_rosa"
+        android:contentDescription="@null"
+        android:src="@drawable/amarillo"
+        android:scaleType="centerCrop"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/splash_activity_intive_rosa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/splash_activity_intive_blanco"
+        app:layout_constraintTop_toBottomOf="@+id/splash_activity_intive_amarillo"
+        android:contentDescription="@null"
+        android:src="@drawable/rosa"
+        android:scaleType="centerCrop"
+
+        />
+
+    <ImageView
+        android:id="@+id/splash_activity_intive_verde"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/splash_activity_intive_celeste"
+        app:layout_constraintBottom_toTopOf="@+id/splash_activity_intive_lila"
+        android:contentDescription="@null"
+        android:src="@drawable/verde"
+        android:scaleType="centerCrop"
+
+        />
+
+    <ImageView
+        android:id="@+id/splash_activity_intive_lila"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/splash_activity_intive_blanco"
+        app:layout_constraintTop_toBottomOf="@+id/splash_activity_intive_verde"
+        app:layout_constraintEnd_toStartOf="@+id/splash_activity_intive_amarillo"
+        android:contentDescription="@null"
+        android:src="@drawable/lila"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/splash_activity_intive_blanco"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:src="@drawable/blanco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/splash_activity_intive_rosa"
+        app:layout_constraintTop_toBottomOf="@+id/splash_activity_intive_lila"
+        android:scaleType="centerCrop"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

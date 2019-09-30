@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <bool name="isLandscape" tools:ignore="MissingDefaultResource">false</bool>
+    <integer name="numberColumns" tools:ignore="MissingDefaultResource">5</integer>
+</resources>

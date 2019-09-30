@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contenedor"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/movimiento_item"
+    >
+
+    <ImageView
+        android:id="@+id/splash_activity_intive_celeste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:contentDescription="@null"
+        android:src="@drawable/celeste"
+        android:scaleType="centerCrop"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/splash_activity_intive_amarillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/amarillo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/splash_activity_intive_rosa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/splash_activity_guideline"
+        android:contentDescription="@null"
+        android:src="@drawable/rosa"
+        android:scaleType="centerCrop"
+
+        />
+
+    <ImageView
+        android:id="@+id/splash_activity_intive_verde"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/splash_activity_guideline"
+        android:contentDescription="@null"
+        android:src="@drawable/verde"
+        android:scaleType="centerCrop"
+
+        />
+
+    <ImageView
+        android:id="@+id/splash_activity_intive_lila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:contentDescription="@null"
+        android:src="@drawable/lila"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/splash_activity_intive_blanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/blanco"
+
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:scaleType="centerCrop"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splash_activity_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5"
+        />
+
+
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
